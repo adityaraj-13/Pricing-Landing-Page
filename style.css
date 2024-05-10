@@ -1,0 +1,168 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CCC7B9
+}
+
+h1{
+    background-color: #653239;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 15px;
+}
+
+header{
+    text-align: center;
+    background-color: #AF7A6D;
+    color: white;
+    border-radius: 15px;
+    padding: 0;
+}
+
+.signup-button{
+    background-color: #007bff;
+    color: white;
+    padding : 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 26px;
+    right : 20px;
+}
+
+.signup-button:hover{
+    background-color: #0056b3;
+    transition: 0.5s ease-in-out;
+}
+
+.currency-bar{
+    margin-bottom: 20px;
+    position: absolute;
+    top: 26px;
+    left: 20px;
+}
+
+label{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#currency-select{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.pricing-plans{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 30px;
+}
+
+.plan{
+    flex:1;
+    padding: 20px;
+    background-color: #EAF9D9 ;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    
+}
+
+.plan:hover{
+    transform: translateY(-5px);
+    background-color: #E2D4BA;
+}
+
+
+.plan h3{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.plan p{
+    font-size: 1.1em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.plan span{
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.plan ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.plan ul li {
+    padding : 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.select{ 
+    border: 2px solid currentColor;
+    border-radius: 2rem;
+    color:black;
+    font-family: roboto;
+    font-size: 1.5rem;
+    font-weight: 6;
+    overflow: hidden;
+    padding :1rem 2rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.select:hover{
+    background-color: rgb(9, 243, 9);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.faq{
+    padding: 20px;
+    background-color: #EAF9D9 ;
+}
+
+.faq,footer{
+    
+    border-top: 1.5px solid black;
+}
+
+@media(max-width: 750px){
+    .pricing-plans{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .signup-button {
+        position: relative;
+        top: unset;
+        right: unset;
+        margin-top: 20px;
+    }
+
+    .currency-bar {
+        position: relative;
+        top: unset;
+        left: unset;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
